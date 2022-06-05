@@ -1,0 +1,13 @@
+{%extends 'App1/base.html'%}
+{% block content%}
+<center>
+<form action="register" method="post">
+{%csrf_token%}
+    <UL>
+        {{form.as_p}}</UL>
+    <button type="submit" name="save" value="save"> save</button>
+</form>
+</center>
+
+
+{% endblock%}
